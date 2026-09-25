@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru" data-security="pending">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html:not([data-security="ready"]) #protected-content { display: none; }
+    html[data-security="ready"] #pending-message { display: none; }
+  </style>
+  <script src="./security.js"></script>
+  <title>DevTools Redirect — вторая страница</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="card" id="protected-content">
+    <span class="eyebrow">Тестовое задание</span>
+    <h1>Вторая страница</h1>
+    <p class="lead">Начальная проверка завершена: признаков закреплённой в данном окне панели DevTools не обнаружено.</p>
+    <p>Откройте DevTools и закрепите панель справа или снизу. Скрипт повторит проверку и при обнаружении перенаправит вас на главную.</p>
+    <a class="button" href="./main.html">Вернуться на main.html</a>
+    <footer>2.html <span>02 / 02</span></footer>
+  </main>
+  <section class="card" id="pending-message" aria-live="polite">
+    <h1>Содержимое скрыто</h1>
+    <p>Выполняется проверка или перенаправление. Если сообщение остаётся, проверьте загрузку security.js.</p>
+    <noscript><p>JavaScript отключён. Для демонстрации его необходимо включить.</p></noscript>
+    <a href="./main.html">Вернуться на главную</a>
+  </section>
+</body>
+</html>

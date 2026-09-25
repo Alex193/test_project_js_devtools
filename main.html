@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevTools Redirect — главная</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="card">
+    <span class="eyebrow">Тестовое задание</span>
+    <p class="lead">Перейдите на вторую страницу. При обнаружении признаков открытой панели разработчика она вернёт вас сюда.</p>
+    <a class="button" href="./2.html">Перейти на 2.html <span aria-hidden="true">→</span></a>
+    <section class="instructions" aria-labelledby="scenario">
+      <h2 id="scenario">Проверка</h2>
+      <ol>
+        <li>Закройте DevTools и убедитесь, что ссылка открывает вторую страницу.</li>
+        <li>Вернитесь сюда и откройте DevTools, закрепив панель в данном окне.</li>
+        <li>Нажмите ссылку повторно: ожидается возврат на эту страницу (на вторую перехода нет).</li>
+      </ol>
+    </section>
+    <footer>main.html <span>01 / 02</span></footer>
+  </main>
+</body>
+</html>

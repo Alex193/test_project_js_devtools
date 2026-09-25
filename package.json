@@ -1,0 +1,13 @@
+{
+  "name": "devtools-redirect-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Обнаружение закреплённых DevTools",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test",
+    "check": "node --check security.js && node --check server.mjs && npm test"
+  }
+}
